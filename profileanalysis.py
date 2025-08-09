@@ -33,6 +33,7 @@ def extract_profile_data(image_folder):
 
                 profile = {
                     "Image File": image_file,
+                    "Name": "",
                     "Bio": "",
                     "Education": "",
                     "Current City": "",
@@ -90,4 +91,5 @@ output_file = "profile_analysis.xlsx"
 
 profiles = extract_profile_data(image_folder)
 save_to_excel(profiles, output_file)
+
 print(f"✅ Excel file saved as: {output_file}")
